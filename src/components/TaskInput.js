@@ -1,4 +1,4 @@
-// import React from 'react';
+import React from 'react';
 // import Grid from '@material-ui/core/Grid';
 // import TextField from '@material-ui/core/TextField';
 // import Button from 'react-bootstrap/Button';
@@ -14,6 +14,11 @@
 //     }
 // }));
 
+function TaskInput() {
+    return (
+        <h3>task input</h3>
+    );
+}
 
 // function TaskInput() {
 //     // const classes = useStyles();
@@ -31,4 +36,4 @@
 //     );
 // }
 
-// export default TaskInput;
+export default TaskInput;

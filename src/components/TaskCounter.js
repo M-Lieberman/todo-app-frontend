@@ -1,5 +1,5 @@
 
-// import React from 'react';
+import React from 'react';
 // import Typography from '@material-ui/core/Typography';
 // import { makeStyles } from '@material-ui/core/styles';
 
@@ -9,6 +9,12 @@
 //       margin: "30px 0"
 //     },
 // }));
+
+function TaskCounter() {
+    return (
+        <div> task counter</div>
+    );
+}
 
 // function TaskCounter({tasksOutstanding}) {
 //     const classes = useStyles();
@@ -21,4 +27,4 @@
 //     );
 // }
 
-// export default TaskCounter;
+export default TaskCounter;
