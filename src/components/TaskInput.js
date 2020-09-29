@@ -1,4 +1,8 @@
 import React from 'react';
+ import Form from 'react-bootstrap/Form';
+import InputGroup from 'react-bootstrap/InputGroup';
+import FormControl from 'react-bootstrap/FormControl';
+
 // import Grid from '@material-ui/core/Grid';
 // import TextField from '@material-ui/core/TextField';
 // import Button from 'react-bootstrap/Button';
@@ -16,7 +20,21 @@ import React from 'react';
 
 function TaskInput() {
     return (
-        <h3>task input</h3>
+
+<Form>
+  <Form.Group controlId="formTaskInput">
+    <Form.Label>Task</Form.Label>
+    <Form.Control type="text" placeholder="e.g. Empty the dishwasher" />
+  </Form.Group>
+</Form>
+
+
+        // <Form>
+        //     <Form.group controlId="taskItem">
+        //         <Form.label>Your task</Form.label>
+        //         <Form.Control plaintext placeholder="Fetch the milk"></Form.Control>
+        //     </Form.group>
+        // </Form>
     );
 }
 
