@@ -11,8 +11,11 @@ import React from 'react';
 // }));
 
 function TaskCounter() {
+
+    const numTasks = 77;
+
     return (
-        <div> task counter</div>
+        <div>You have {numTasks} tasks outstanding</div>
     );
 }
 

@@ -12,7 +12,9 @@ import React from 'react';
 function Header() {
 
     return (
-        <h1 class="display-3 text-center">To Do</h1>
+        <div>
+            <h1 className="display-2 text-right">To Do</h1>
+        </div>
     );
 }
 

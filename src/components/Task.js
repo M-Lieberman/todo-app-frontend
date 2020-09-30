@@ -1,28 +1,33 @@
 import React from 'react';
-import Grid from 'react-bootstrap/Grid';
 import Button from 'react-bootstrap/Button';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
-function Task({task}) {
+function Task({ task }) {
 
 
     return (
-        <Grid container spacing={2}>
-            <Grid item xs={12} md={8}>
-                {task.taskDescription}
-            </Grid>
-            <Grid item xs={12} md={2}>
-                {!task.completed &&
-                    <Button variant="contained" color="primary" >
-                        DONE
+
+        <Container>
+            <Row>
+                <Col>
+                    {/* {!task.completed &&
+                        <Button type="button" className="primary" >
+                            DONE
                     </Button>
-                }
-            </Grid>
-            <Grid item xs={12} md={2}>
-                <Button variant="contained" color="primary" >
-                    DELETE
-                </Button>
-            </Grid>
-        </Grid>
+                    } */}
+                    column 1
+                </Col>
+                <Col>
+                    {/* <Button type="button" className="danger" >
+                        DELETE
+                </Button> */}
+                column 2
+            </Col>
+            </Row>
+        </Container>
+
     );
 }
 
