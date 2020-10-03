@@ -3,7 +3,7 @@ import Container from 'react-bootstrap/Container';
 import Header from './components/Header';
 import TaskInput from './components/TaskInput';
 import TaskCounter from './components/TaskCounter';
-import Task from './components/Task';
+import TaskListing from './components/TaskListing';
 
 import './App.css';
 // import TaskListing from './components/TaskListing';
@@ -27,8 +27,8 @@ function App() {
       <TaskInput />
       <TaskCounter  />
       {/* <TaskCounter tasksOutstanding={tasks.length} /> */}
-      {/* <TaskListing taskData={tasks} /> */}
-      <Task />
+      <TaskListing taskData={tasks} />
+
     </Container>
   );
 }

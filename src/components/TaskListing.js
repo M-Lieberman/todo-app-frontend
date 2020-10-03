@@ -1,7 +1,15 @@
-// import React from 'react';
+import React from 'react';
 // import Typography from '@material-ui/core/Typography';
 // import Grid from '@material-ui/core/Grid';
-// import Task from './Task';
+import Task from './Task';
+
+function TaskListing({taskData}) {
+
+    return (
+        <Task tasks={taskData} />
+    );
+}
+
 
 // function TaskListing({taskData}) {
 
@@ -26,4 +34,4 @@
 //     );
 // }
 
-// export default TaskListing;
+export default TaskListing;

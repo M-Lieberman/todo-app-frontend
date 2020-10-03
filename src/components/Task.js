@@ -4,14 +4,14 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-function Task({ task }) {
-
+function Task({ tasks }) {
 
     return (
 
         <Container>
             <Row>
                 <Col>
+                    Description: {tasks.taskDescription}
                     {/* {!task.completed &&
                         <Button type="button" className="primary" >
                             DONE
@@ -20,6 +20,7 @@ function Task({ task }) {
                     column 1
                 </Col>
                 <Col>
+
                     {/* <Button type="button" className="danger" >
                         DELETE
                 </Button> */}
