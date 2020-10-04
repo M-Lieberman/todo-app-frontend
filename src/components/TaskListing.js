@@ -1,12 +1,25 @@
 import React from 'react';
-// import Typography from '@material-ui/core/Typography';
-// import Grid from '@material-ui/core/Grid';
+import { Container, Row, Col } from 'react-bootstrap';
 import Task from './task/Task';
 
-function TaskListing({taskData}) {
+function TaskListing({ taskData }) {
+
+    const incompleteTasks = taskData.filter((task) => task.completed === false);
+    const completedTasks = taskData.filter((task) => task.completed === true);
 
     return (
-        <Task tasks={taskData} />
+        <Container>
+            <Row>
+                <Col >
+                <h5>Incomplete Tasks</h5>
+                    <Task tasks={incompleteTasks} />
+                </Col>
+                <Col>
+                <h5>Completed Tasks</h5>
+                    <Task tasks={completedTasks} />
+                </Col>
+            </Row>
+        </Container>
     );
 }
 
